@@ -4,8 +4,15 @@
     {
         static void Main(string[] args)
         {
+
+            pointofreturn:
             Console.Write("Enter hight");
             int hight = int.Parse(Console.ReadLine());
+            if (hight <= 0)
+            {
+                Console.Write("Your number is smaller then or equal 0, reenter");
+                goto pointofreturn;
+            }
 
             int startpoint = 1;
 
